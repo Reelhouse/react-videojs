@@ -4,6 +4,7 @@ var assign = require('object-assign');
 var cx = require('classnames');
 var blacklist = require('blacklist');
 var React = require('react');
+var videojs = require('video.js/dist/alt/video.novtt.js');
 
 module.exports = React.createClass({
   displayName: 'VideoJS',
@@ -16,6 +17,7 @@ module.exports = React.createClass({
     });
     if (this.props.onPlayerInit) this.props.onPlayerInit(player);
   },
+
 
   handlePlay: function handlePlay() {
     if (this.props.onPlay) this.props.onPlay(this.player);

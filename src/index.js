@@ -2,6 +2,7 @@ var assign = require('object-assign');
 var cx = require('classnames');
 var blacklist = require('blacklist');
 var React = require('react');
+var videojs = require('video.js/dist/alt/video.novtt.js')
 
 module.exports = React.createClass({
   displayName: 'VideoJS',
